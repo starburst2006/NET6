@@ -1,55 +1,55 @@
 ﻿// See https://aka.ms/new-console-template for more information
-//Console.WriteLine("Zadej číslo dne v týdnu:");
-//int vstupni_hodnota = int.Parse(Console.ReadLine());
-//string den;
-//bool vikend = false;
-
-//switch (vstupni_hodnota)
-//{
-//    case 1:
-//        den = "pondělí";
-//        break;
-//    case 2:
-//        den = "úterý";
-//        break;
-//    case 3:
-//        den = "středa";
-//        break;
-//    case 4:
-//        den = "čtvrtek";
-//        break;
-//    case 5:
-//        den = "pátek";
-//        break;
-//    case 6:
-//        den = "sobota";
-//        vikend = true;
-//        break;
-//    case 7:
-//        den = "neděle";
-//        vikend = true;
-//        break;
-//    default:
-//        den = "chyba";
-//        break;
-
-//}
-
-//Console.WriteLine($"Zadal jsi {vstupni_hodnota}, což je {den} a to { vikend ? "je víkend.":"není víkend."});
 
 
 
-Console.WriteLine("Zadej číslo");
-int vstup = int.Parse(Console.ReadLine());
 
-for (int i = 1; i <= vstup; i++)
+string DenVTydnu(int vstup)
 {
-   string pomocna = ""; 
-    for (int j = 1; j <= i; j++)
+
+    switch (vstup)
     {
-        pomocna = pomocna + i;
-        
+        case 1:
+            return "pondělí";
+            break;
+        case 2:
+            return "úterý";
+            break;
+        case 3:
+            return "středa";
+            break;
+        case 4:
+            return "čtvrtek";
+            break;
+        case 5:
+            return "pátek";
+            break;
+        case 6:
+            return "sobota";
+            //vikend = true;
+            break;
+        case 7:
+            return "neděle";
+            //   vikend = true;
+            break;
+        default:
+            return "chyba";
+            break;
+
     }
-    Console.WriteLine(pomocna);
 }
 
+string den = DenVTydnu(2);
+Console.WriteLine(den);
+
+
+//int Suma(int a, int b)
+//{
+//    int sum = a + b;
+
+//    return sum;
+//}
+
+
+
+//int sum = Suma(10, 15);
+//Console.WriteLine(sum);
