@@ -1,14 +1,9 @@
 ﻿// See https://aka.ms/new-console-template for more information
+Console.WriteLine("napiš teplotu ve stupních Celsia");
+string vstup = Console.ReadLine();
 
-int a = 10;
+double teplota_C = double.Parse(vstup);
 
-int b = 20;
+double teplota_F = (1.8  * teplota_C) + 32;
 
-int c = 0;
-Console.WriteLine("původní a=" + a + ", původní b=" + b);
-
-c = a;
-a = b;
-b = c;
-
-Console.WriteLine("nové a=" + a + ", nové b=" + b);
+Console.WriteLine($"Teplota = {teplota_C}°C je {teplota_F}°F");
