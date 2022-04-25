@@ -4,20 +4,31 @@ int vstup = int.Parse(Console.ReadLine());
 string vystup;
 
 
-if (vstup == 1)
-{ vystup = "pondělí"; }
-else if (vstup == 2)
-{ vystup = "úterý"; }
-else if (vstup == 3)
-{ vystup = "středa"; }
-else if (vstup == 4)
-{ vystup = "čtvrtek"; }
-else if (vstup == 5)
-{ vystup = "pátek"; }
-else if (vstup == 6)
-{ vystup = "sobota"; }
-else if (vstup == 7)
-{ vystup = "neděle"; }
-else { vystup = "špatné číslo"; }
+switch (vstup)
+{
+    case 1:
+        vystup = "pondělí";
+        break;
+    case 2:
+        vystup = "úterý";
+        break;
+    case 3:
+        vystup = "středa";
+        break;
+    case 4:
+        vystup = "čtvrtek";
+        break;
+    case 5:
+        vystup = "pátek";
+        break;
+    case 6:
+        vystup = "sobota";
+        break;
+    case 7:
+        vystup = "neděle";
+        break;
+   
+
+}
 
 Console.WriteLine($"Zadal jsi {vstup}, což je {vystup}.");
