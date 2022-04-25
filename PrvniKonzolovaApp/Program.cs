@@ -27,7 +27,9 @@ switch (vstup)
     case 7:
         vystup = "neděle";
         break;
-   
+    default: 
+        vystup = "chyba";
+        break;
 
 }
 
