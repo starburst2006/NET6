@@ -41,11 +41,15 @@
 
 Console.WriteLine("Zadej číslo");
 int vstup = int.Parse(Console.ReadLine());
-int vystup = 0; 
 
 for (int i = 1; i <= vstup; i++)
 {
-    vystup = vystup + i;
+   string pomocna = ""; 
+    for (int j = 1; j <= i; j++)
+    {
+        pomocna = pomocna + i;
+        
+    }
+    Console.WriteLine(pomocna);
 }
 
-Console.WriteLine($"součet je {vystup}");
