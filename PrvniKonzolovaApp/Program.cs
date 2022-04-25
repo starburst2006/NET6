@@ -5,7 +5,7 @@ Console.WriteLine("zadávejte čísla, po skončení stiskni klávesu q");
  
 int soucet = 0;
 
-while(!Console.ReadKey = "q")
+while(Console.ReadLine() != "Q")
 {
    int vstup = int.Parse(Console.ReadLine());
    soucet += vstup;
