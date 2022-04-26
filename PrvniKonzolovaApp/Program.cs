@@ -15,6 +15,15 @@
 //bod2.Y = 15;
 
 
-_2D bod3 = new _2D(12, 32);
+//_2D bod3 = new _2D(12, 32);  // Pomocí konstruktoru
 
-Console.WriteLine($"X: {bod3.X} y: {bod3.Y}");
+//Console.WriteLine($"X: {bod3.X} y: {bod3.Y}");
+
+//bod3.Print();
+
+
+
+
+Obsah Obsah1 = new Obsah(20, 10);
+
+Console.WriteLine(Obsah1.VypocitejObsah());
