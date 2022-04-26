@@ -45,9 +45,16 @@ using PrvniKonzolovaApp.Data;
 
 //Console.WriteLine(RandomPointGenerator.GetCount());
 
-_2D bod1 = new _2D(100, 10);  // Pomocí konstruktoru
-_2D bod2 = new _2D(10, 10);  // Pomocí konstruktoru
+//_2D bod1 = new _2D(100, 10);  // Pomocí konstruktoru
+//_2D bod2 = new _2D(10, 10);  // Pomocí konstruktoru
 
 
 
-Console.WriteLine(Point2DMath.WhitchIsBigger(bod1, bod2));
+//Console.WriteLine(Point2DMath.WhitchIsBigger(bod1, bod2));
+
+
+Car Auto1 = new Car( "2B17895",  "červená",  10000,  "Škoda");
+
+string result = StolenCheck.GetRegisterInfo(Auto1.SPZ);
+
+Console.WriteLine(result);

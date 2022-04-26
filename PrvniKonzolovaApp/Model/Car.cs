@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace PrvniKonzolovaApp.Model
 {
-    internal class Cars
+    internal class Car
     {
-        public Cars(string spz, string barva, int km, string znacka)
+        public Car(string spz, string barva, double km, string znacka)
         {
             SPZ = spz;
             Barva = barva;  
@@ -18,7 +18,7 @@ namespace PrvniKonzolovaApp.Model
         }
         public string SPZ { get; set; }
         public string Barva { get; set; }
-        public int Km { get; set; }
+        public double Km { get; set; }
         public string Znacka { get; set; }
 
     }
