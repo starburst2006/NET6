@@ -15,6 +15,10 @@ namespace PrvniKonzolovaApp.Data
         {
             return Counter;
         }
+        /// <summary>
+        /// vygeneruje náhodné souřadnice X a Y v rozsahu int.MinValue - int.MaxValue
+        /// </summary>
+        /// <returns>instanci _2D</returns>
         public static _2D GetRandomPoint()
         {
             Random random = new Random();

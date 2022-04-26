@@ -9,6 +9,10 @@ namespace PrvniKonzolovaApp.Data
 {
     internal class StolenCheck
     {
+        /// <summary>
+        /// zkontroluje zda není SPZ v databázi kradených SPZ
+        /// </summary>
+        /// <returns>Vrátí true pokud je auto kradené, jinak false</returns>
         public static bool GetRegisterInfo(Car auto)
         {
             

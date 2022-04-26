@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace PrvniKonzolovaApp.Model
 {
+    /// <summary>
+    /// reprezentuje 1 auto
+    /// </summary>
     internal class Car
     {
         public Car(string spz, string barva, double km, string znacka)

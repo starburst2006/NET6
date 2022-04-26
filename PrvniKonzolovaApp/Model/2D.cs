@@ -32,7 +32,10 @@ namespace PrvniKonzolovaApp.Model
             double obsah = Math.Abs(X) * Math.Abs(Y);
             return obsah;
         }
-
+        /// <summary>
+        /// zjistí, v jakém kvadrantu se souřadnice nachází
+        /// </summary>
+        /// <returns>vrací karteziánský souřadnicový systém jako číslo kvadrantu</returns>
         public Quadrant GetQuadrant()
         {
             if (X == 0 && Y == 0) return Quadrant.Origin;
