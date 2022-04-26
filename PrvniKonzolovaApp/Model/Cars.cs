@@ -8,6 +8,14 @@ namespace PrvniKonzolovaApp.Model
 {
     internal class Cars
     {
+        public Cars(string spz, string barva, int km, string znacka)
+        {
+            SPZ = spz;
+            Barva = barva;  
+            Km = km;    
+            Znacka = znacka;
+
+        }
         public string SPZ { get; set; }
         public string Barva { get; set; }
         public int Km { get; set; }
