@@ -18,7 +18,7 @@ namespace PrvniKonzolovaApp.Model
 
         public double VypocitejObsah()
         {
-            double obsah = X * Y;
+            double obsah = Math.Abs(X) * Math.Abs(Y);
             return obsah;
         }
 
