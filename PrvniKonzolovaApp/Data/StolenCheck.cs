@@ -9,12 +9,12 @@ namespace PrvniKonzolovaApp.Data
 {
     internal class StolenCheck
     {
-        public static string GetRegisterInfo(string SPZ)
+        public static bool GetRegisterInfo(Car auto)
         {
-            string status;
-            if (SPZ == "1B18855") { status = $"ty jeden uličníku, prodáváš kradené auto SPZ: {SPZ}"; }
-            else { status = $"Je to cajk - SPZ: {SPZ}"; }
-            return status;
+            
+            if (auto.SPZ == "1B18855") { return true; }
+            else { return false; }
+            
         }
     }
 }

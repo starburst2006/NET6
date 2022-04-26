@@ -53,8 +53,9 @@ using PrvniKonzolovaApp.Data;
 //Console.WriteLine(Point2DMath.WhitchIsBigger(bod1, bod2));
 
 
-Car Auto1 = new Car( "2B17895",  "červená",  10000,  "Škoda");
+Car Auto1 = new Car("1B88855",  "červená",  10000,  "Škoda");
 
-string result = StolenCheck.GetRegisterInfo(Auto1.SPZ);
+bool result = StolenCheck.GetRegisterInfo(Auto1);
 
-Console.WriteLine(result);
+if (result) Console.WriteLine("Kradené");
+else Console.WriteLine("OK");
