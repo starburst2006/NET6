@@ -17,7 +17,7 @@ public static _2D WhitchIsBigger(_2D bod1, _2D bod2)
             if (obsah1 > obsah2) return bod1;
             else return bod2;
 
-        }
+        } 
 
     }
 }
