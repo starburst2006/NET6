@@ -11,13 +11,15 @@ namespace PrvniKonzolovaApp.Data
     {
         public static List<string> StolenCars = new List<string>();
         private static bool IsLoadedStolenCars = false;
-        public const string StolenCarPath = @"C:\Users\Student\source\repos\starburst2006\NET6\PrvniKonzolovaApp\SPZ\kradene.txt";
+        public static bool IsError = false;
+        public const string StolenCarPath = @"C:\Users\Student\source\repos\starburst2006\NET6\PrvniKonzolovaApp\SPZ\kradene2.txt";
         /// <summary>
         /// zkontroluje zda není SPZ v databázi kradených SPZ
         /// </summary>
         /// <returns>Vrátí true pokud je auto kradené, jinak false</returns>
         public static bool GetRegisterInfo(Car auto)
         {
+            
             if (!IsLoadedStolenCars) 
             {
                 LoadStolenCars(StolenCarPath); 
@@ -34,8 +36,20 @@ namespace PrvniKonzolovaApp.Data
         }
         public static void LoadStolenCars(string file)
         {
-            string[] lines = File.ReadAllLines(file);
-            foreach(string line in lines)
+            string[] lines;
+            try
+            {
+                lines = File.ReadAllLines(file);
+            }
+            catch(Exception ex)
+            {
+                IsLoadedStolenCars=false;
+                IsError=true;
+                return;
+                Console.WriteLine(ex.Message);
+            }
+                
+                foreach(string line in lines)
             {
                 StolenCars.Add(line);
             }
