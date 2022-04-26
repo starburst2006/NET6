@@ -9,7 +9,7 @@ namespace PrvniKonzolovaApp.Data
 {
     internal class StolenCheck
     {
-        public static string[] StolenCars = { "1B18855", "1B28855", "1B38855", "1B48855" };
+        public static List<string> StolenCars = new List<string>();
         
         /// <summary>
         /// zkontroluje zda není SPZ v databázi kradených SPZ
@@ -25,6 +25,14 @@ namespace PrvniKonzolovaApp.Data
             }
              return false;
            
+        }
+        public static void LoadStolenCars(string file)
+        {
+            string[] lines = File.ReadAllLines(file);
+            foreach(string line in lines)
+            {
+                StolenCars.Add(line);
+            }
         }
     }
 }
