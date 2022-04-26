@@ -28,7 +28,7 @@ namespace PrvniKonzolovaApp.Model
         }
 
 
-        public  Quadrant GetQuadrant()
+        public Quadrant GetQuadrant()
         {
             if (X == 0 && Y == 0) return Quadrant.Origin;
             if (X >= 0 && Y >= 0) return Quadrant.Quadrant1;
@@ -37,7 +37,11 @@ namespace PrvniKonzolovaApp.Model
             else if (X >= 0 && Y < 0) return Quadrant.Quadrant4;
             else return Quadrant.Error;
         }
-         
+
+        public override string ToString()
+        {
+            return $"X: {X}, Y: {Y}";
+        }
 
     }
 }

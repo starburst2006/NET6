@@ -1,4 +1,5 @@
 ﻿using PrvniKonzolovaApp.Model;
+using PrvniKonzolovaApp.Data;
 
 //Person person1 = new Person("Marek","Bohanes");
 //person1.DateOfBirdth = new DateTime(1986, 03, 08);
@@ -19,9 +20,9 @@
 //bod2.Y = 15;
 
 
-_2D bod3 = new _2D(1, 0);  // Pomocí konstruktoru
+//_2D bod3 = new _2D(1, 0);  // Pomocí konstruktoru
 
-Console.WriteLine(bod3.GetQuadrant());
+//Console.WriteLine(bod3.GetQuadrant());
 
 //Console.WriteLine($"X: {bod3.X} y: {bod3.Y}");
 
@@ -34,3 +35,10 @@ Console.WriteLine(bod3.GetQuadrant());
 //Obsah Obsah1 = new Obsah(20, 10);
 
 //Console.WriteLine(Obsah1.VypocitejObsah());
+
+
+
+for (int i = 1; i <= 10; i++)
+{
+    Console.WriteLine(RandomPointGenerator.GetRandomPoint());
+}
