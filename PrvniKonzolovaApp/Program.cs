@@ -1,71 +1,15 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using PrvniKonzolovaApp.Model;
 
-
-Console.WriteLine("zadávejte čísla, po skončení stiskni klávesu q");
- 
-int soucet = 0;
-
-while(Console.ReadLine() != "Q")
-{
-   int vstup = int.Parse(Console.ReadLine());
-   soucet += vstup;
-
-}
-
-Console.WriteLine(soucet);
+//Person person1 = new Person();
+//person1.Name = "Marek Bohanes";
+//person1.DateOfBirdth = new DateTime(1986, 03, 08);
 
 
 
+_2D bod1 = new _2D();
+bod1.X = 20;
+bod1.Y = 10;
 
-//string DayOfWeek(DenVTydnu day)
-//{
-
-//    switch (day)
-//    {
-//        case DenVTydnu.PONDELI:
-//            return "pondělí";
-//        case DenVTydnu.UTERY:
-//            return "úterý";
-//        case DenVTydnu.STREDA:
-//            return "středa";
-//        case DenVTydnu.CTVRTEK:
-//            return "čtvrtek";
-//        case DenVTydnu.PATEK:
-//            return "pátek";
-//        case DenVTydnu.SOBOTA:
-//            return "sobota";
-//        case DenVTydnu.NEDELE:
-//            return "neděle";
-//        default:
-//            return "chyba";
-
-//    }
-//}
-
-//string den = DayOfWeek(2);
-//Console.WriteLine(den);
-
-
-//int Suma(int a, int b)
-//{
-//    int sum = a + b;
-
-//    return sum;
-//}
-
-
-
-//int sum = Suma(10, 15);
-//Console.WriteLine(sum);
-
-
-//enum DenVTydnu
-//{
-//    PONDELI,
-//    UTERY,
-//    STREDA,
-//    CTVRTEK,
-//    PATEK,
-//    SOBOTA,
-//    NEDELE
-//}
+_2D bod2 = new _2D();
+bod2.X = 30;    
+bod2.Y = 15;    
