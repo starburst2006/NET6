@@ -28,6 +28,16 @@ namespace PrvniKonzolovaApp.Model
         }
 
 
+        public  Quadrant GetQuadrant()
+        {
+            if (X == 0 && Y == 0) return Quadrant.Origin;
+            if (X >= 0 && Y >= 0) return Quadrant.Quadrant1;
+            else if (X < 0 && Y >= 0) return Quadrant.Quadrant2;
+            else if (X < 0 && Y < 0) return Quadrant.Quadrant3;
+            else if (X >= 0 && Y < 0) return Quadrant.Quadrant4;
+            else return Quadrant.Error;
+        }
+         
 
     }
 }

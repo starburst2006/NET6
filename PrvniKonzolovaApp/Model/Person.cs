@@ -8,7 +8,18 @@ namespace PrvniKonzolovaApp.Model
 {
     internal class Person
     {
-        public string Name { get; set; }
+        public Person(string firstname, string lastname)
+        {
+            FirstName = firstname;
+            LastName = lastname;
+        }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
         public DateTime DateOfBirdth { get; set; }
+
+        public override string ToString()
+        {
+            return $"{FirstName} {LastName}";
+        }
     }
 }
