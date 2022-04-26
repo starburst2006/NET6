@@ -1,8 +1,6 @@
 ﻿using PrvniKonzolovaApp.Model;
 using PrvniKonzolovaApp.Data;
 
-StolenCheck.LoadStolenCars(@"C:\Users\Student\source\repos\starburst2006\NET6\PrvniKonzolovaApp\SPZ\kradene.txt");
-
 
 Car Auto1 = new Car("1B98855",  "červená",  10000,  "Škoda");
 

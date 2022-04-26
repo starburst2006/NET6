@@ -10,13 +10,19 @@ namespace PrvniKonzolovaApp.Data
     internal class StolenCheck
     {
         public static List<string> StolenCars = new List<string>();
-        
+        private static bool IsLoadedStolenCars = false;
+        public const string StolenCarPath = @"C:\Users\Student\source\repos\starburst2006\NET6\PrvniKonzolovaApp\SPZ\kradene.txt";
         /// <summary>
         /// zkontroluje zda není SPZ v databázi kradených SPZ
         /// </summary>
         /// <returns>Vrátí true pokud je auto kradené, jinak false</returns>
         public static bool GetRegisterInfo(Car auto)
         {
+            if (!IsLoadedStolenCars) 
+            {
+                LoadStolenCars(StolenCarPath); 
+            }
+            
             foreach(string kradenaSPZ in StolenCars)
             {
             if (auto.SPZ == kradenaSPZ) 
@@ -33,6 +39,7 @@ namespace PrvniKonzolovaApp.Data
             {
                 StolenCars.Add(line);
             }
+            IsLoadedStolenCars = true;
         }
     }
 }
