@@ -38,7 +38,16 @@ using PrvniKonzolovaApp.Data;
 
 
 
-for (int i = 1; i <= 10; i++)
-{
-    Console.WriteLine(RandomPointGenerator.GetRandomPoint());
-}
+//for (int i = 1; i <= 10; i++)
+//{
+//    Console.WriteLine(RandomPointGenerator.GetRandomPoint());
+//}
+
+//Console.WriteLine(RandomPointGenerator.GetCount());
+
+_2D bod1 = new _2D(100, 10);  // Pomocí konstruktoru
+_2D bod2 = new _2D(10, 10);  // Pomocí konstruktoru
+
+
+
+Console.WriteLine(Point2DMath.WhitchIsBigger(bod1, bod2));

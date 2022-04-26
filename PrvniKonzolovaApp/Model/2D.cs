@@ -27,6 +27,11 @@ namespace PrvniKonzolovaApp.Model
             Console.WriteLine($"X: {X}, Y: {Y}");
         }
 
+        public double VypocitejObsah()
+        {
+            double obsah = Math.Abs(X) * Math.Abs(Y);
+            return obsah;
+        }
 
         public Quadrant GetQuadrant()
         {
