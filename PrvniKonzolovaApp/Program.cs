@@ -39,8 +39,15 @@ int[] cisla = { 11, 2, 13, 44, -5, 6, 127, -99, 0, 256 };
 //}
 
 // SELECT - transformační operátor (měním prvky které mu předhodím
-var absolutnihotnota = cisla.Select(cislo => Math.Abs(cislo));
-foreach (var cislo in absolutnihotnota)
+//var absolutnihotnota = cisla.Select(cislo => Math.Abs(cislo));
+//foreach (var cislo in absolutnihotnota)
+//{
+//    Console.WriteLine(cislo);
+//}
+
+//z lichých čísel udělat sudá, přetransformovat jen některé a zbytek nechat
+var result = cisla.Select(cislo => cislo % 2 == 0 ? cislo : cislo + 1);
+foreach (var cislo in result)
 {
     Console.WriteLine(cislo);
 }
