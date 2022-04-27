@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PrvniKonzolovaApp.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -35,7 +36,20 @@ namespace WpfApp1
 
         private void btnDetail_Click(object sender, RoutedEventArgs e)
         {
+            var person = (Person)dgDataset.SelectedItem;
 
+            if (person != null)
+            {
+
+                //otevři okno
+                PersonDetailWindow pdw = new PersonDetailWindow(person);
+                pdw.Show();
+
+            }
+            else
+            {
+                //nemám nic vybraného
+            }
         }
     }
 }

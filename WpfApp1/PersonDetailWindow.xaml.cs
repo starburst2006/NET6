@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PrvniKonzolovaApp.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +20,15 @@ namespace WpfApp1
     /// </summary>
     public partial class PersonDetailWindow : Window
     {
-        public PersonDetailWindow()
+        public PersonDetailWindow(Person person)
         {
             InitializeComponent();
+
+            txtFirstName.Text = person.FirstName; 
+            txtLastName.Text = person.LastName;
+            txtDateOfBirth.Text = person.DateOfBirth.ToString();
+            txtAddress.Text = person.Address.ToString();
+            
         }
     }
 }
