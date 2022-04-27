@@ -46,7 +46,24 @@ int[] cisla = { 11, 2, 13, 44, -5, 6, 127, -99, 0, 256 };
 //}
 
 //z lichých čísel udělat sudá, přetransformovat jen některé a zbytek nechat
-var result = cisla.Select(cislo => cislo % 2 == 0 ? cislo : cislo + 1);
+//var result = cisla.Select(cislo => cislo % 2 == 0 ? cislo : cislo + 1);
+//foreach (var cislo in result)
+//{
+//    Console.WriteLine(cislo);
+//}
+
+
+int TransformujSlozite(int cislo)
+{
+    if (cislo > 0)
+        return cislo + 10;
+    else if (cislo < 0)
+        return cislo - 10;
+    else
+        return cislo;
+}
+
+var result = cisla.Select(cislo => TransformujSlozite(cislo));
 foreach (var cislo in result)
 {
     Console.WriteLine(cislo);
