@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace PrvniKonzolovaApp.Model
 {
-    internal class Person
+    public class Person
     {
+        public Person()
+        {
+
+        }
         public Person(string firstname, string lastname)
         {
             FirstName = firstname;
@@ -15,7 +19,7 @@ namespace PrvniKonzolovaApp.Model
         }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public DateTime DateOfBirdth { get; set; }
+        public DateTime DateOfBirth { get; set; }
         public Address Address { get; set; } = new Address();
 
         public override string ToString()

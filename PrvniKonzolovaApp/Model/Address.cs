@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PrvniKonzolovaApp.Model
 {
-    internal class Address
+    public class Address
     {
         public Address(string street, string city, int postalCode, string country)
         {
