@@ -32,8 +32,15 @@ int[] cisla = { 11, 2, 13, 44, -5, 6, 127, -99, 0, 256 };
 //Console.WriteLine(result);
 
 // vypište sudá čísla
-var result = cisla.Where(cislo => cislo % 2 == 0);
-foreach (var cislo in result)
+//var result = cisla.Where(cislo => cislo % 2 == 0);
+//foreach (var cislo in result)
+//{
+//    Console.WriteLine(cislo);
+//}
+
+// SELECT - transformační operátor (měním prvky které mu předhodím
+var absolutnihotnota = cisla.Select(cislo => Math.Abs(cislo));
+foreach (var cislo in absolutnihotnota)
 {
     Console.WriteLine(cislo);
 }
