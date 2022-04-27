@@ -24,5 +24,10 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
+
+        private void btnOK_Click(object sender, RoutedEventArgs e)
+        {
+            txbInfo.Text = DateTime.Now.ToString();
+        }
     }
 }
