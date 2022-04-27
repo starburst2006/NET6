@@ -1,0 +1,20 @@
+﻿<Window x:Class="WpfApp1.PersonDetailWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Osoba detail" Height="450" Width="500">
+    <Grid>
+        <TextBox x:Name="txtFirstName" HorizontalAlignment="Left" Margin="10,36,0,0" TextWrapping="Wrap" Text="Jméno" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Křestní jméno:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtLastName" HorizontalAlignment="Left" Margin="10,85,0,0" TextWrapping="Wrap" Text="Příjmení" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Příjmení:" HorizontalAlignment="Left" Margin="10,59,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtDateOfBirth" HorizontalAlignment="Left" Margin="10,136,0,0" TextWrapping="Wrap" Text="12.12.1999" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Datum narození:" HorizontalAlignment="Left" Margin="10,110,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtAddress" HorizontalAlignment="Left" Margin="10,198,0,0" TextWrapping="Wrap" Text="Adresa..." VerticalAlignment="Top" Width="120"/>
+        <Label Content="Adresa:" HorizontalAlignment="Left" Margin="13,172,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
