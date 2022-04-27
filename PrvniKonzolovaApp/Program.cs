@@ -13,7 +13,7 @@ var result = cisla.Where(cislo => cislo > 0);
 
 //var result2 = cisla.Where(cislo => cislo >= -50 && cislo <=50);
 
-var result2 = cisla.OrderBy(cislo => cislo);
+var result2 = cisla.OrderByDescending(cislo => cislo);
 
 
 foreach (var cislo in result2)
