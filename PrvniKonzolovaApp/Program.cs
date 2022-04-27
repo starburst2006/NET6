@@ -11,7 +11,10 @@ var result = cisla.Where(cislo => cislo > 0);
 //    Console.WriteLine(cislo);
 //}
 
-var result2 = cisla.Where(cislo => cislo >= -50 && cislo <=50);
+//var result2 = cisla.Where(cislo => cislo >= -50 && cislo <=50);
+
+var result = cisla.Where(cislo => cislo >= -50)
+                  .Where(cislo => cislo <= 50);
 
 foreach (var cislo in result2)
 {
