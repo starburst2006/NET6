@@ -16,7 +16,7 @@ namespace PrvniKonzolovaApp.Model
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public DateTime DateOfBirdth { get; set; }
-        public Address Address { get; set; }
+        public Address Address { get; set; } = new Address();
 
         public override string ToString()
         {

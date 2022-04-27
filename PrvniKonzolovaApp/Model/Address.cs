@@ -14,13 +14,16 @@ namespace PrvniKonzolovaApp.Model
             City = city;
             PostalCode = postalCode;
             Country = country;
-        } 
+        }
+        public Address()
+        {
 
+        }
 
-        public string Street { get; set; }
-        public string City { get; set; }
-        public int PostalCode { get; set; }
-        public string Country { get; set; }
+        public string Street { get; set; } = "";
+        public string City { get; set; } = "";
+        public int PostalCode { get; set; } = 00000;
+        public string Country { get; set; } = "Česká republika";
 
         public override string ToString()
         {
