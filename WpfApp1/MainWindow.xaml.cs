@@ -25,9 +25,16 @@ namespace WpfApp1
             InitializeComponent();
         }
 
-        private void btnOK_Click(object sender, RoutedEventArgs e)
+        private void btnLoad_Click(object sender, RoutedEventArgs e)
         {
-            txbInfo.Text = DateTime.Now.ToString();
+            PeopleDataset.GeneratePeople(20);
+
+            txbInfo.Text = "";
+
+            foreach (var osoba in PeopleDataset.People)
+            {
+                txbInfo.Text += osoba.ToString() + Environment.NewLine;
+            }
         }
     }
 }
