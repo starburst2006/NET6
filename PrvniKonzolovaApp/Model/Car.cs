@@ -19,10 +19,23 @@ namespace PrvniKonzolovaApp.Model
             Znacka = znacka;
 
         }
-        public string SPZ { get; set; }
-        public string Barva { get; set; }
-        public double Km { get; set; }
-        public string Znacka { get; set; }
+        #region properties
+        public string SPZ { get; set; } = "";
+        public string Barva { get; set; } = "Nezadana";
+        public double Km { get; set; } = 0;
+        public string Znacka { get; set; } = "nezadána";
+        public Person Majitel { get; set; }
+        #endregion
+
+        public void AddKilometers(double km)
+        {
+            Km += km;
+        }
+
+        public void AddOneKm()
+        {
+            Km++;
+        }
 
     }
 }
