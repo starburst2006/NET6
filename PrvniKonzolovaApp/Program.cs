@@ -10,9 +10,11 @@ for (int i = 0; i < 50; i++)
     lide.Add(RandomPersonGenerator.GetRandomPerson());
 }
 
-var result = lide.Where(osoba => osoba.DateOfBirth.Year < 1980).ToList();
+var result = lide.OrderBy(osoba => osoba.DateOfBirth).Where(osoba => osoba.Address.City == "Brno").First();
 
-foreach (Person osoba in result)
-{
-    Console.WriteLine(osoba + " " + osoba.DateOfBirth.ToString("yyyy-MM-dd"));
-}
+//foreach (Person osoba in result)
+//{
+//    Console.WriteLine(osoba + " " + osoba.DateOfBirth.ToString("yyyy-MM-dd"));
+//}
+
+Console.WriteLine(result + " " + result.DateOfBirth.ToString("yyyy-MM-dd") + " " + result.Address.City);
