@@ -10,8 +10,11 @@
         <StackPanel Orientation="Horizontal">
             <Button x:Name="btnLoad" Content="Vygeneruj Dataset" Width="150" Height="30" Margin="10,10,10,10" Click="btnLoad_Click"  />
         </StackPanel>
-        <TextBlock Name="txbInfo" Text="Info o lidech">
-            
-        </TextBlock>
+        
+        <DataGrid x:Name="dgDataset" Margin="5"/>
+        
+        <TextBlock Name="txbInfo" Text="Info o lidech" />
+
+
     </StackPanel>
 </Window>

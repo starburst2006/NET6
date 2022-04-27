@@ -8,7 +8,7 @@ namespace PrvniKonzolovaApp.Model
 {
     public class Address
     {
-        public Address(string street, string city, int postalCode, string country)
+        public Address(string street, string city, string postalCode, string country)
         {
             Street = street;
             City = city;
@@ -22,7 +22,7 @@ namespace PrvniKonzolovaApp.Model
 
         public string Street { get; set; } = "";
         public string City { get; set; } = "";
-        public int PostalCode { get; set; } = 00000;
+        public String PostalCode { get; set; } = "";
         public string Country { get; set; } = "Česká republika";
 
         public override string ToString()

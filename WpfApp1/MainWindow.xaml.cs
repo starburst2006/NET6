@@ -28,13 +28,9 @@ namespace WpfApp1
         private void btnLoad_Click(object sender, RoutedEventArgs e)
         {
             PeopleDataset.GeneratePeople(20);
+            dgDataset.ItemsSource = PeopleDataset.People;
 
-            txbInfo.Text = "";
 
-            foreach (var osoba in PeopleDataset.People)
-            {
-                txbInfo.Text += osoba.ToString() + Environment.NewLine;
-            }
         }
     }
 }
