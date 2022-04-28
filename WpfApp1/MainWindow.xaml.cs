@@ -51,5 +51,10 @@ namespace WpfApp1
                 //nemám nic vybraného
             }
         }
+
+        private async void btnLoadAPI_Click(object sender, RoutedEventArgs e)
+        {
+            await PeopleDataset.LoadPeopleFromAPI(5);
+        }
     }
 }

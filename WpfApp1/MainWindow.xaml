@@ -10,6 +10,7 @@
         <StackPanel Orientation="Horizontal">
             <Button x:Name="btnLoad" Content="Vygeneruj Dataset" Width="150" Height="30" Margin="5,10" Click="btnLoad_Click"  />
             <Button x:Name="btnDetail" Content="Detail" Margin="5,10" Height="30" Width="70" Click="btnDetail_Click"/>
+            <Button x:Name="btnLoadAPI" Click="btnLoadAPI_Click" Content="Stáhni dataset" Margin="5,10" Height="30" Width="90"/>
         </StackPanel>
         
         <DataGrid x:Name="dgDataset" Margin="5"/>
