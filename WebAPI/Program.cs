@@ -23,7 +23,7 @@ app.UseHttpsRedirection();
 
 app.MapGet("/person", () => RandomPersonGenerator.GetRandomPerson());
 
-app.MapGet("/people", () => RandomPersonGenerator.GetPeople(10));
+app.MapGet("/people/{cnt}", (int cnt) => RandomPersonGenerator.GetPeople(cnt));
 
 app.Run();
 
