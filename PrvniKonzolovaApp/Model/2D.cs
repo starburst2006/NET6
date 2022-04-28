@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PrvniKonzolovaApp.Model
 {
-    internal class _2D
+    public class _2D
     {
         public _2D(int x, int y)  // konstruktor
         {
