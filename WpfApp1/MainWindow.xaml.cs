@@ -55,6 +55,7 @@ namespace WpfApp1
         private async void btnLoadAPI_Click(object sender, RoutedEventArgs e)
         {
             await PeopleDataset.LoadPeopleFromAPI(5);
+            dgDataset.ItemsSource = PeopleDataset.People;
         }
     }
 }
