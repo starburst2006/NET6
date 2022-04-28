@@ -1,7 +1,6 @@
 ﻿using PrvniKonzolovaApp.Model;
 using PrvniKonzolovaApp.Data;
 
-
 List<Person> lide = new();
 
 //vyrobí 50ks náhodných osob
@@ -18,3 +17,4 @@ var result = lide.Where(osoba => osoba.Address.City == "Praha").Count();
 //}
 
 Console.WriteLine(result + " " );
+Console.ReadLine();
